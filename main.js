@@ -4,9 +4,9 @@
 // answer = 'yes, is palindrom'
 
 // Creare una funzione per capire se la parola inserita è palindroma
-let text = prompt('enter a word');
+let text = prompt('Scrivi una parola');
 
-function controlpalindrom(text) {
+function controllapalindromo(text) {
     let word_reverse = text.split('').reverse().join('');
     if (text===word_reverse) {
     console.log('si è palindromo');     
@@ -14,7 +14,7 @@ function controlpalindrom(text) {
         console.log('non è palindromo');  
     }
 }
-controlpalindrom(text);
+controllapalindromo(text);
 
 
 // Pari e Dispari
