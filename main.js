@@ -1,7 +1,21 @@
 // Palidroma
 // Chiedere all’utente di inserire una parola
-let word = prompt('enter a word')
+// let answer
+// answer = 'yes, is palindrom'
+
 // Creare una funzione per capire se la parola inserita è palindroma
+let text = prompt('enter a word');
+
+function controlpalindrom(text) {
+    let word_reverse = text.split('').reverse().join('');
+    if (text===word_reverse) {
+    console.log('si è palindromo');     
+    }else{
+        console.log('non è palindromo');  
+    }
+}
+controlpalindrom(text);
+
 
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
