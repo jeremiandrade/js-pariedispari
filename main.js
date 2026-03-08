@@ -2,8 +2,8 @@
 // Chiedere all’utente di inserire una parola
 // let answer
 // answer = 'yes, is palindrom'
-
 // Creare una funzione per capire se la parola inserita è palindroma
+
 let text = prompt('Scrivi una parola');
 
 function controllapalindromo(text) {
@@ -35,5 +35,23 @@ controllapalindromo(text);
 // Se sì, di che tipo?
 
 
+//pari o dispari
+let evenorodd = prompt('pari o dispari?');
+let number = Number(prompt('Inserisci un numero da 1 a 5'));
+console.log(evenorodd,number);
 
-
+function RandomNumber(min, max) {
+let x = Math.floor((Math.random() * 5) + 1);
+let somma = number + x 
+  console.log(somma);
+  if (somma % 2 === 0 && evenorodd === 'pari') {
+    console.log('You are the winner!');    
+  }else if (somma % 2 === 1 && evenorodd === 'dispari'){
+    console.log('You are the winner!!');
+  } else{
+    console.log('the pc win');
+    
+  }
+}
+RandomNumber(number) 
+  
