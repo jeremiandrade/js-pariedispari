@@ -4,8 +4,8 @@
 // answer = 'yes, is palindrom'
 // Creare una funzione per capire se la parola inserita è palindroma
 
-let text = prompt('Scrivi una parola');
 
+let text = prompt('Scrivi una parola');
 function controllapalindromo(text) {
     let word_reverse = text.split('').reverse().join('');
     if (text===word_reverse) {
@@ -28,21 +28,14 @@ controllapalindromo(text);
 // Scriviamo sempre in italiano i passaggi che vogliamo fare
 // Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
-// Domande da  farsi quando si crea una funzione:
-// Come dovrebbe chiamarsi?
-// Ho bisogno di parametri?
-// Devo restituire un valore?
-// Se sì, di che tipo?
 
+let userEvenOdd = prompt('pari o dispari?');
+let userNumber = Number(prompt('Inserisci un numero da 1 a 5'));
+console.log(userEvenOdd,userNumber);
 
-//pari o dispari
-let evenorodd = prompt('pari o dispari?');
-let number = Number(prompt('Inserisci un numero da 1 a 5'));
-console.log(evenorodd,number);
-
-function RandomNumber(min, max) {
-let x = Math.floor((Math.random() * 5) + 1);
-let somma = number + x 
+function RandomNumber(userNumber, evenorodd) {
+  let x = Math.floor((Math.random() * 5) + 1);
+  let somma = userNumber + x 
   console.log(somma);
   if (somma % 2 === 0 && evenorodd === 'pari') {
     console.log('You are the winner!');    
@@ -53,5 +46,5 @@ let somma = number + x
     
   }
 }
-RandomNumber(number) 
-  
+RandomNumber(userNumber, userEvenOdd) 
+ 
